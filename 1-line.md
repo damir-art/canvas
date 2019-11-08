@@ -40,3 +40,9 @@
     ctx.moveTo(150, 50)
     ctx.lineTo(200, 50)
     ctx.stroke()
+    
+Создаём концы для линий butt (по-умолчанию), round, square:
+
+    // Концы линии
+    ctx.lineCap = 'butt' // round, square
+    ctx.stroke()
