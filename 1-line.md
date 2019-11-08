@@ -18,8 +18,25 @@
     // Создать линию
     ctx.stroke()
 
-Добавляем линию:
+Продолжаем линию:
 
     /* Добавление линии */
+    ctx.lineTo(200, 50)
+    ctx.stroke()
+
+Создаём несколько разных линий `ctx.beginPath()`:
+
+    /* Создание новой линии */
+    ctx.beginPath()
+    ctx.moveTo(100, 50)
+    ctx.lineTo(150, 150)
+    ctx.strokeStyle = 'green'
+    ctx.lineWidth = '5'
+    ctx.stroke()
+
+    ctx.beginPath()
+    ctx.strokeStyle = 'orange'
+    ctx.lineWidth = '10'
+    ctx.moveTo(150, 50)
     ctx.lineTo(200, 50)
     ctx.stroke()
