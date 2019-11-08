@@ -1,7 +1,7 @@
 # Линия
 ## Рисуем линию в Canvas
 
-Задаём начальное положение пера и конечное.
+Задаём начальное и конечное положения пера.
 
     var canvas = document.getElementById('c1')
     var ctx = canvas.getContext('2d')
