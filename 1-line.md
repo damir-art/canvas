@@ -6,7 +6,8 @@
     var canvas = document.getElementById('c1')
     var ctx = canvas.getContext('2d')
 
-    // Начальные координаты пера
+    /* Создание линии */
+    // Начальные координаты пера (ширина, высота)
     ctx.moveTo(100, 50)
     // Конечные координаты пера
     ctx.lineTo(150, 150)
@@ -14,5 +15,11 @@
     ctx.strokeStyle = 'green'
     // Ширина линии
     ctx.lineWidth = '5'
-    // Линия
+    // Создать линию
+    ctx.stroke()
+
+Добавляем линию:
+
+    /* Добавление линии */
+    ctx.lineTo(200, 50)
     ctx.stroke()
