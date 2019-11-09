@@ -46,3 +46,22 @@
     // Концы линии
     ctx.lineCap = 'butt' // round, square
     ctx.stroke()
+
+## Рисуем треугольник
+Рисуем треугольник заливаем цветом, создаём обводку (обычно обводка не нужна, только пути):
+
+    ctx.beginPath()
+    ctx.moveTo(50, 150)
+    ctx.lineTo(150, 50)
+    ctx.lineTo(250, 150)
+    ctx.lineTo(50, 150)
+    ctx.strokeStyle = 'green'
+    ctx.lineWidth = '15'
+    ctx.lineCap = 'square'
+    // Закрываем фигуру
+    ctx.closePath()
+    ctx.stroke()
+    ctx.fillStyle = 'orange'
+    ctx.fill()
+
+Если используем `ctx.closePath()`, то последний отрезок можно не создавать.
