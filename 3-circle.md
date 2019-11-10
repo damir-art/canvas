@@ -31,6 +31,24 @@
     // Выполнить заливку
     ctx.fill()
 
+## Две окружности
+
+    ctx.beginPath()
+    ctx.lineWidth = 5
+    ctx.strokeStyle = 'green'
+    ctx.fillStyle = 'orange'
+    ctx.arc(100, 100, 50, 0, pi*2, false)
+    ctx.stroke()
+    ctx.fill()
+
+    ctx.beginPath()
+    ctx.lineWidth = 5
+    ctx.strokeStyle = 'orange'
+    ctx.fillStyle = 'green'
+    ctx.arc(250, 100, 50, 0, pi*2, false)
+    ctx.stroke()
+    ctx.fill()
+
 ## PS
 * Используем `ctx.beginPath()` и `ctx.closePath()`, если окружностей несколько.
 * `ctx.arc(100, 100, 50, 0, pi*2, false)` полную окружность нужно делать через `false`
