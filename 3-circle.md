@@ -7,6 +7,8 @@
 * `true` против часовой, `false` по часовой
 * pi == 180 градусов
 
+Пример окружности:
+
     var canvas = document.getElementById('c1')
     var ctx = canvas.getContext('2d')
     var pi = Math.PI
@@ -28,7 +30,6 @@
 
     // Выполнить заливку
     ctx.fill()
-
 
 ## PS
 * Используем `ctx.beginPath()` и `ctx.closePath()`, если окружностей несколько.
